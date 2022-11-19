@@ -1,0 +1,111 @@
+html {
+    text-align: center;
+    background-color:rgb(250, 250, 175);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a:link, a:visited {
+    color: tomato;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 17.75px;
+    transition: 0.75s;
+}
+a:hover {
+    color:rgb(200, 99, 71);
+    font-size: 25px;
+}
+h1 {
+    transition:0.75s;
+    margin: 0;
+}
+h1:hover {
+    color: tomato;
+    font-size: 50px;
+}
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+.navBar {
+    background-color: #69281c;
+    overflow: hidden;
+}
+.navBar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.175s;
+}
+.navBar a:hover {
+    background-color: tomato;
+    color:  black;
+}
+.navBar a.split {   
+    float: right;
+    background-color: tomato;
+    color: black;
+    transition: 0.175s;
+}
+.navBar a.split:hover {
+    background-color: #69281c;
+    color: white;
+}
+p {
+    font-size: 17.75px;
+}
+img  {
+    height: 250;
+    width: 250;
+    align-self: center;
+    transition: 3s;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.busMove {
+    float: left;
+}
+
+.busMove:hover {
+    float: left;
+    animation-name: busMove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 600;
+    margin-top: 50px;
+}
+@keyframes busMove {
+    0% { transform: translate(0, 0px);}
+    25% { transform: translate(50, 0px);}
+    50% { transform: translate(100, 0px);}
+    75% { transform: translate(200, 0px);}
+    100% { transform: translate(400, 0px);}
+}
+.monitorGradient:hover {
+    animation-name: imageMorph;
+    animation-duration: 5s;
+    animation-iteration-count: inherit;
+    animation-timing-function: ease-in;
+}
+@keyframes imageMorph {
+    0% { opacity: 1;}
+    100% { opacity: 1;}
+}
